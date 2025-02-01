@@ -1,5 +1,5 @@
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 
 from github_info import get_repo_contents
 from leetcode_info import get_daily_problem
@@ -45,5 +45,5 @@ def request_post(date):
 
 
 if __name__ == "__main__":
-    today = datetime.strptime("2025-01-30", "%Y-%m-%d")
+    today = datetime.now(timezone.utc)
     request_post(today)
