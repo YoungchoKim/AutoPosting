@@ -3,4 +3,4 @@ selenium
 torch
 transformers
 accelerate
-mysql
+mysql-connector-python
