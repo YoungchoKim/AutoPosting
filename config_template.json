@@ -1,0 +1,19 @@
+{
+  "tistory": {
+    "username": "",
+    "password": "",
+    "tistory_url": ""
+  },
+  "database": {
+    "host": "",
+    "port": 0,
+    "user": "",
+    "password": "",
+    "database_name": ""
+  },
+  "github": {
+    "owner": "",
+    "repo": "",
+    "token": ""
+  }
+}
