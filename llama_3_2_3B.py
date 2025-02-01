@@ -44,6 +44,7 @@ def explain_solution(problem_statement, solution_code):
         Note:
         You should give a json response to the system.
         No response should be given other than summary, approach, complexity, and explain in json format.
+        The value of json must be of string type. The json value must not have a recursive json string.
         """
         },
         {"role": "user", "content": f"""
