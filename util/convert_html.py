@@ -1,7 +1,7 @@
 def dict_to_html(data):
     html = ""
     for key, value in data.items():
-        html += f"<h3>{key}</h3>\n<ul>\n"
+        html += f"<h3>{key.title()}</h3>\n<ul>\n"
         for line in value.split('. '):
             if line.strip():
                 html += f"    <li>{line.strip()}</li>\n"
