@@ -13,11 +13,11 @@ def request_post(date):
     with open("config.json", "r") as f:
         config = json.load(f)
 
-    if is_daily_date_exists(today):
+    if is_daily_date_exists(date):
         print("already synced")
         exit(0)
 
-    problem = get_daily_problem(today)
+    problem = get_daily_problem(date)
     if not problem:
         print("problem not found")
         exit(0)
