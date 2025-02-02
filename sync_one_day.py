@@ -28,7 +28,7 @@ def request_post(date):
     code = get_repo_contents(problem['titleSlug'])
     if not code:
         print("code not found")
-        exit(0)
+        return None
     print(code)
 
     blog_content_dict = explain_solution(problem['content'], code)
