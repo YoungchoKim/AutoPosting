@@ -2,7 +2,7 @@
 
 def get_leetcode_link(title, titleSlug):
     html = '<h3>Leetcode Problem: </h>\n'
-    html += f'<ul><li><a href="https://leetcode.com/problems/{titleSlug}/description/">{title}</a></li></ul>\n'
+    html += f'<ul><li><a href="https://leetcode.com/problems/{titleSlug}/description/" target="blank">{title}</a></li></ul>\n'
     return html
 
 
