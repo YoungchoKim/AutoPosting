@@ -3,8 +3,7 @@
 - Using llm, we post a summary of the Leetcode problem, how to approach the problem, time complexity of the code, and code explanation.
 
 
-![AutoPostingStructure_](https://github.com/user-attachments/assets/d37b097c-06ea-41b3-a92c-847ffc2c4485)
-
+![AutoPostingStructure](https://github.com/user-attachments/assets/554a4270-0477-4af2-9c25-dee22cb51599)
 
 
 ### Post Table
