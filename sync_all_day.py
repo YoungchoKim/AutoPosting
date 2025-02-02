@@ -17,9 +17,8 @@ if __name__ == '__main__':
     today = datetime.now(timezone.utc)
     while start_date <= today:
         res = request_post(start_date)
-        if not res:
-            continue
-        completed += 1
+        if res:
+            completed += 1
         if completed == 10:
             break
         start_date = start_date + timedelta(days=1)
