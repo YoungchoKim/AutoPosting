@@ -5,7 +5,7 @@ from github_info import get_repo_contents
 from leetcode_info import get_daily_problem
 from database import is_daily_date_exists, insert_problem_name
 from llama_3_2_3B import explain_solution
-from util.convert_html import dict_to_html, tistory_code_block
+from util.convert_html import *
 from post_tistory import post_to_tistory
 
 
@@ -34,7 +34,8 @@ def request_post(date):
     blog_content_dict = explain_solution(problem['content'], code)
     print('solution', blog_content_dict)
 
-    blog_content_html = dict_to_html(blog_content_dict)
+    blog_content_html = get_leetcode_link(problem['title'], problem['titleSlug'])
+    blog_content_html += dict_to_html(blog_content_dict)
     blog_content_html += tistory_code_block(code)
 
     tags = "algorithm, Leetcode, 알고리즘, 릿코드"

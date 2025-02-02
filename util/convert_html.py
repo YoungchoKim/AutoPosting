@@ -1,3 +1,11 @@
+
+
+def get_leetcode_link(title, titleSlug):
+    html = '<h3>Leetcode Problem: </h>\n'
+    html += f'<ul><li><a href="https://leetcode.com/problems/{titleSlug}/description/">{title}</a></li></ul>\n'
+    return html
+
+
 def dict_to_html(data):
     html = ""
     for key, value in data.items():
@@ -7,6 +15,7 @@ def dict_to_html(data):
                 html += f"    <li>{line.strip()}</li>\n"
         html += "</ul>\n"
     return html
+
 
 def tistory_code_block(code):
     html = "<h3>Solution Code:</h3>\n"
