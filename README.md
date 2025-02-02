@@ -2,7 +2,9 @@
 - AutoPosting was developed to automatically post the contents of a repository linked to Leethub to tistory.
 - Using llm, we post a summary of the Leetcode problem, how to approach the problem, time complexity of the code, and code explanation.
 
-![AutoPostingStructure](https://github.com/user-attachments/assets/e47bd9db-3670-43fb-926e-8bec71fb26a5)
+
+![AutoPostingStructure](https://github.com/user-attachments/assets/b3f5114c-cb4f-4222-a38d-f8c3f908a529)
+
 
 
 ### Post Table
