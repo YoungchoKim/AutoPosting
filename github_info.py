@@ -16,7 +16,7 @@ def get_repo_contents(title):
     response.raise_for_status()
 
     contents = response.json()
-    problem = [item for item in contents if title in item['name']]
+    problem = [item for item in contents if item['name'].endswith(title)]
     if not problem:
         print(f"{title} not exist")
         return None
