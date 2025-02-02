@@ -7,21 +7,24 @@ from selenium.common.exceptions import TimeoutException
 import time
 import random
 
-options = webdriver.ChromeOptions()
-options.add_argument("--headless") # not display web browser
-options.add_argument("--disable-gpu")  # for headless
-options.add_argument("--no-sandbox")  # for linux
 
-# init web driver
-driver = webdriver.Chrome(options=options)
-driver.maximize_window()
+def selenium_init():
+    global driver
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless")  # not display web browser
+    options.add_argument("--disable-gpu")  # for headless
+    options.add_argument("--no-sandbox")  # for linux
+    # init web driver
+    driver = webdriver.Chrome(options=options)
+    driver.maximize_window()
+
 
 def random_wait():
     time.sleep(random.uniform(3, 6))
 
 
 def post_to_tistory(username, password, tistory_url, title, content, tags):
-
+    selenium_init()
     try:
         move_login_page(tistory_url)
 
