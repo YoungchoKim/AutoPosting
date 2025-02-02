@@ -15,8 +15,8 @@ mysql> desc Post;
 ```json
 {
   "tistory": {
-    "username": "",   # your kakao id
-    "password": "",   # your kakao password
+    "username": "",   # your kakao id for tistory login
+    "password": "",   # your kakao password for tistory login
     "tistory_url": "" # your tistory url. ex) xxx.tistory.com
   },
   "database": {
