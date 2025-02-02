@@ -42,8 +42,10 @@ def request_post(date):
                     config["tistory"]["tistory_url"], problem['title'], blog_content_html, tags)
 
     insert_problem_name(problem['titleSlug'], date)
+    return True
 
 
 if __name__ == "__main__":
+    # today = datetime.strptime("2025-02-01", "%Y-%m-%d")
     today = datetime.now(timezone.utc)
     request_post(today)
