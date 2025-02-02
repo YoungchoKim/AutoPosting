@@ -15,12 +15,12 @@ def request_post(date):
 
     if is_daily_date_exists(date):
         print("already synced")
-        exit(0)
+        return None
 
     problem = get_daily_problem(date)
     if not problem:
         print("problem not found")
-        exit(0)
+        return None
     print('titleSlug', problem['titleSlug'])
     print('content', problem['content'])
 
