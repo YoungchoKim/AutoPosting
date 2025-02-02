@@ -1,3 +1,8 @@
+### AutoPosting
+- AutoPosting was developed to automatically post the contents of a repository linked to Leethub to tistory.
+- Using llm, we post a summary of the Leetcode problem, how to approach the problem, time complexity of the code, and code explanation.
+
+
 ### Post Table
 ```
 mysql> desc Post;
