@@ -21,7 +21,7 @@ mysql> desc Post;
   },
   "database": {
     "host": "",          # your mysql address ex) localhost
-    "port": 0,           
+    "port": 0,           # ex) 3306
     "user": "",          # your mysql id
     "password": "",      # your mysql password
     "database_name": ""  # your database name
