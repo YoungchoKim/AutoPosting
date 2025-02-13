@@ -39,13 +39,13 @@ def explain_solution(problem_statement, solution_code):
         - summary: summary of the problem.
         - approach: Explanation of the approach used.
         - complexity: Time complexity of the solution.
-        - explain: Explain the solution code.
+        - explanation: Explain the solution code.
         
         Note:
         You should give a json response to the system.
-        No response should be given other than summary, approach, complexity, and explain in json format.
+        No response should be given other than summary, approach, complexity, and explanation in json format.
         The value of json must be of string type. The json value must not have a recursive json string.
-        One json must have 4 keys (summary, approach, complexity, explain).
+        One json must have 4 keys (summary, approach, complexity, explanation).
         """
         },
         {"role": "user", "content": f"""
